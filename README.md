@@ -52,7 +52,7 @@ Netlify or Cloudflare Pages also work: set the publish directory to the reposito
 | Multiple pages | 7 distinct pages: Home, About, Mission, Programs, Donate, Contact, Privacy |
 | Mission, history, programs | Mission page (charter text), About page (history), Programs page (detailed descriptions) |
 | No placeholder text | None. Every page has real content. |
-| No AI-generated images | The site uses no photos. The logo (two Shabbos candles), icons and background pattern are simple hand-coded SVG. |
+| No AI-generated images | The site uses no photos or illustrations. The only graphic is the logo (two Shabbos candles), a simple hand-coded SVG. |
 | Org name in header and footer | On every page |
 | Footer: EIN, admin email, domain, physical address | On every page |
 | Contact email on the custom domain | admin@ and donate@imothersofch.org |
