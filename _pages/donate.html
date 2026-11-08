@@ -1,0 +1,69 @@
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="/">Home</a> / Donate</p>
+        <h1>Donate</h1>
+        <p class="lead">Your gift helps a Jewish family in Crown Heights keep a roof overhead, food on the table, and the lights on. Donations are tax-deductible to the extent allowed by law.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+            <h3>Give by email</h3>
+            <p>Write to our donations team and we will reply with the current ways to give, including credit card, bank transfer and other options, and answer any questions.</p>
+            <a class="btn btn-primary" href="mailto:{{donate_email}}?subject=Donation%20to%20Israeli%20Mothers%20of%20Crown%20Heights" style="width:100%">Email {{donate_email}}</a>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 14h5M15 11h3"/></svg></div>
+            <h3>Give by check</h3>
+            <p>Make your check payable to:<br><strong>{{legal_name}}</strong></p>
+            <p>Mail it to:</p>
+            <address class="address">{{legal_name}}<br>{{street}}<br>{{city}}, {{state}} {{zip}}</address>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg></div>
+            <h3>Donor-advised funds &amp; foundations</h3>
+            <p>You can recommend a grant from your donor-advised fund or family foundation using our details:</p>
+            <p><strong>{{legal_name}}</strong><br>EIN: <strong>{{ein}}</strong><br>{{street}}, {{city}}, {{state}} {{zip}}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white">
+      <div class="container">
+        <div class="split">
+          <div>
+            <span class="eyebrow">Where your gift goes</span>
+            <h2>Your donation at work</h2>
+            <p>Donations fund our three programs:</p>
+            <ul class="checklist">
+              <li><strong><a href="/programs.html#family-support">Family Support</a></strong> for households under ongoing strain</li>
+              <li><strong><a href="/programs.html#emergency-assistance">Emergency Assistance</a></strong> for rent, utilities and urgent expenses</li>
+              <li><strong><a href="/programs.html#food-assistance">Food Assistance</a></strong> for kosher food, Shabbos and Yom Tov</li>
+            </ul>
+            <p>If you would like your gift directed to a particular program or to holiday assistance, simply let us know in your note or email.</p>
+          </div>
+          <div class="notice">
+            <h3>Tax information</h3>
+            <p>{{legal_name}} is recognized by the Internal Revenue Service as a tax-exempt public charity under section 501(c)(3) of the Internal Revenue Code. Our EIN is <strong>{{ein}}</strong>.</p>
+            <p>Contributions are tax-deductible to the extent allowed by law. We provide a written acknowledgment for donations. Please include your name, mailing address and email address with your gift so we can send your receipt.</p>
+            <p>Questions about a donation or receipt? Email <a href="mailto:{{donate_email}}">{{donate_email}}</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <h2>Other ways to help</h2>
+        <ul class="checklist">
+          <li><strong>Volunteer.</strong> Help pack and deliver food before Shabbos and the holidays, or lend your professional skills.</li>
+          <li><strong>Sponsor a holiday.</strong> Help cover holiday food and essentials for families before Pesach, Rosh Hashanah or Sukkos.</li>
+          <li><strong>Spread the word.</strong> Tell friends and family about our work, and let us know about a family that may need help.</li>
+        </ul>
+        <p>To get involved, email <a href="mailto:{{admin_email}}">{{admin_email}}</a> or visit our <a href="/contact.html">contact page</a>.</p>
+      </div>
+    </section>
