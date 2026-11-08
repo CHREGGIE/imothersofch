@@ -34,15 +34,28 @@ python3 build.py
 
 Then commit the regenerated files.
 
-## Hosting
+## Hosting on Vercel
 
-The site is ready for **GitHub Pages**:
+The site is set up for Vercel. There's no build step on Vercel's side: the finished pages are committed, and Vercel serves them as they are.
 
-1. In the repository, open Settings → Pages, choose "Deploy from a branch", and pick the branch with folder `/ (root)`.
-2. The `CNAME` file already sets the custom domain to `imothersofch.org`. At your domain registrar, add GitHub Pages' DNS records (A records for the apex domain, and a CNAME for `www` pointing to `<user>.github.io`).
-3. Once the certificate is issued, tick **Enforce HTTPS**.
+- `vercel.json` adds security headers and sets a one-hour browser cache on `/assets/`. It also redirects `/index.html` to `/`.
+- `.vercelignore` keeps the source files (`_pages/`, `build.py`, this README) off the live site.
+- `404.html` is used automatically for missing pages.
 
-Netlify or Cloudflare Pages also work: set the publish directory to the repository root with no build command.
+### First deploy
+
+1. In Vercel, choose **Add New → Project** and import this GitHub repository.
+2. Set **Framework Preset** to **Other**. Leave Build Command and Output Directory empty.
+3. Choose **Deploy**. After a minute or so you'll get a `*.vercel.app` preview address.
+
+### Connect imothersofch.org
+
+1. In the project, open **Settings → Domains** and add `imothersofch.org` and `www.imothersofch.org`. Set `www` to redirect to the main domain.
+2. Vercel shows the DNS records to add. At your domain registrar, add them (normally an `A` record for `imothersofch.org` and a `CNAME` for `www`).
+3. Keep the existing **MX** and **TXT** records for Google Workspace. Change only the records Vercel asks for, or email will stop working.
+4. Vercel issues the HTTPS certificate automatically once DNS is in place.
+
+Every push to the production branch redeploys the site. Other branches get their own preview addresses.
 
 ## Google for Nonprofits website checklist
 

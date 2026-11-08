@@ -1,0 +1,4 @@
+# Source files used to generate the pages; not part of the published site
+_pages/
+build.py
+README.md
