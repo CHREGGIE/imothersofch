@@ -12,10 +12,9 @@ from PIL import Image, ImageOps
 ROOT = Path(__file__).resolve().parent.parent
 SRC, OUT = ROOT / "photos", ROOT / "assets" / "img"
 
-# Cropped photos used outside the gallery.
+# Cropped photos used outside the gallery (none at the moment).
 # output name: (source file, aspect w/h, vertical focus 0=top..1=bottom, horizontal focus)
 PHOTOS = {
-    "table-round":   ("WhatsApp Image 2026-11-08 at 7.58.22 AM26.jpeg", 4 / 5, 0.5, 0.5),
 }
 
 # Events page gallery, in display order. Each becomes event-NN.jpg (1200px) and event-NN-sm.jpg (600px).
