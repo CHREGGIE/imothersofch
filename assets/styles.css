@@ -239,12 +239,16 @@ blockquote.charter cite { display: block; margin-top: 1em; font-family: var(--sa
 
 /* ---------- Photos ---------- */
 .photo { display: block; width: 100%; height: auto; border-radius: 4px; background: var(--blush); }
-.photo-inline { margin: 4px 0 20px; }
-.photo-band { padding: 48px 0 0; }
-.photo-band + .section { padding-top: 48px; }
 .hero-grid { display: grid; grid-template-columns: 1fr 380px; gap: 56px; align-items: center; }
 .hero-photo .photo { aspect-ratio: 4 / 5; object-fit: cover; }
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; gap: 32px; }
   .hero-photo .photo { aspect-ratio: 4 / 3; }
 }
+.photo-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 28px 0 20px; }
+.photo-strip .photo { aspect-ratio: 4 / 3; object-fit: cover; }
+@media (max-width: 700px) { .photo-strip { grid-template-columns: 1fr 1fr; } .photo-strip a:last-child { display: none; } }
+.gallery { columns: 3 300px; column-gap: 16px; }
+.gallery-item { display: block; margin: 0 0 16px; break-inside: avoid; border-radius: 4px; overflow: hidden; background: var(--blush); }
+.gallery-item img { display: block; width: 100%; height: auto; transition: opacity .2s; }
+.gallery-item:hover img { opacity: .9; }

@@ -12,6 +12,7 @@ It's a plain static site: HTML and CSS with a few lines of JavaScript, no framew
 | About Us (history, who we serve, governance) | `about.html` |
 | Mission (Article II purpose statement, values) | `mission.html` |
 | Programs (Family Support, Emergency Assistance, Food Assistance) | `programs.html` |
+| Events (photo gallery) | `events.html` |
 | Contact | `contact.html` |
 | Donate | `donate.html` |
 | Privacy Policy | `privacy.html` |
@@ -62,7 +63,7 @@ Every push to the production branch redeploys the site. Other branches get their
 | Requirement | How the site meets it |
 |---|---|
 | Live, HTTPS, no mixed content | All assets are local or loaded over `https://` (Google Fonts). Turn on HTTPS enforcement at the host. |
-| Multiple pages | 7 distinct pages: Home, About, Mission, Programs, Donate, Contact, Privacy |
+| Multiple pages | 8 distinct pages: Home, About, Mission, Programs, Events, Donate, Contact, Privacy |
 | Mission, history, programs | Mission page (charter text), About page (history), Programs page (detailed descriptions) |
 | No placeholder text | None. Every page has real content. |
 | No AI-generated images | Real photos from the organization's own events (originals in `photos/`, web copies made by `tools/photos.py`, metadata stripped). The only other graphics are the candle logo and the brownstone line drawing in the footer, both simple hand-coded SVG (the drawing comes from `tools/brownstones.py`). |

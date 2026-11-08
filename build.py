@@ -41,6 +41,8 @@ PAGES = [
      "The mission and purpose of Israeli Mothers of Crown Heights Incorporated, as set out in its certificate of incorporation."),
     ("programs", "Programs", f"Programs & Services | {ORG['short_name']}",
      "Family support, emergency assistance and food assistance programs offered by Israeli Mothers of Crown Heights in Brooklyn, New York."),
+    ("events", "Events", f"Events | {ORG['short_name']}",
+     "Photos from community events hosted by Israeli Mothers of Crown Heights for women in Crown Heights, Brooklyn."),
     ("contact", "Contact", f"Contact Us | {ORG['short_name']}",
      "Contact Israeli Mothers of Crown Heights Incorporated by email, phone or mail. Request assistance confidentially."),
     ("donate", "Donate", f"Donate | {ORG['short_name']}",
@@ -124,6 +126,7 @@ def footer() -> str:
           <li><a href="/about.html">About Us</a></li>
           <li><a href="/mission.html">Mission</a></li>
           <li><a href="/programs.html">Programs</a></li>
+          <li><a href="/events.html">Events</a></li>
           <li><a href="/donate.html">Donate</a></li>
           <li><a href="/contact.html">Contact</a></li>
           <li><a href="/privacy.html">Privacy Policy</a></li>

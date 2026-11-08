@@ -12,15 +12,30 @@ from PIL import Image, ImageOps
 ROOT = Path(__file__).resolve().parent.parent
 SRC, OUT = ROOT / "photos", ROOT / "assets" / "img"
 
+# Cropped photos used outside the gallery.
 # output name: (source file, aspect w/h, vertical focus 0=top..1=bottom, horizontal focus)
 PHOTOS = {
     "table-round":   ("WhatsApp Image 2026-11-08 at 7.58.22 AM26.jpeg", 4 / 5, 0.5, 0.5),
-    "gathering":     ("WhatsApp Image 2026-11-08 at 7.58.20 AM13.jpeg", 3 / 2, 0.5, 0.45),
-    "table-long":    ("WhatsApp Image 2026-11-08 at 7.58.20 AM12.jpeg", 16 / 7, 0.62, 0.5),
-    "candles":       ("WhatsApp Image 2026-11-08 at 7.58.21 AM09.jpeg", 16 / 9, 0.3, 0.5),
-    "salads":        ("WhatsApp Image 2026-11-08 at 7.58.22 AM07.jpeg", 16 / 9, 0.62, 0.5),
-    "candelabras":   ("WhatsApp Image 2026-11-08 at 7.58.24 AM.jpeg", 16 / 9, 0.55, 0.5),
 }
+
+# Events page gallery, in display order. Each becomes event-NN.jpg (1200px) and event-NN-sm.jpg (600px).
+GALLERY = [
+    "WhatsApp Image 2026-11-08 at 7.58.20 AM12.jpeg",
+    "WhatsApp Image 2026-11-08 at 7.58.22 AM26.jpeg",
+    "WhatsApp Image 2026-11-08 at 7.58.20 AM13.jpeg",
+    "WhatsApp Image 2026-11-08 at 7.58.21 AM09.jpeg",
+    "WhatsApp Image 2026-11-08 at 7.58.24 AM.jpeg",
+    "WhatsApp Image 2026-11-08 at 7.58.22 AM07.jpeg",
+    "WhatsApp Image 2026-11-08 at 7.58.23 AM04.jpeg",
+    "WhatsApp Image 2026-11-08 at 7.58.19 AM14.jpeg",
+    "WhatsApp Image 2026-11-08 at 7.58.23 AM.jpeg",
+    "WhatsApp Image 2026-11-08 at 7.58.21 AM11.jpeg",
+    "WhatsApp Image 2026-11-08 at 7.58.21 AM10.jpeg",
+    "WhatsApp Image 2026-11-08 at 7.58.23 AM02.jpeg",
+    "WhatsApp Image 2026-11-08 at 7.58.22 AM08.jpeg",
+    "WhatsApp Image 2026-11-08 at 7.58.23 AM05.jpeg",
+    "WhatsApp Image 2026-11-08 at 7.58.23 AM03.jpeg",
+]
 SIZES = {"": 1600, "-sm": 800}
 
 
@@ -49,6 +64,15 @@ def main():
             path = OUT / f"{name}{suffix}.jpg"
             out.save(path, "JPEG", quality=78, optimize=True, progressive=True)
             print(f"{path.relative_to(ROOT)}  {out.width}x{out.height}  {path.stat().st_size // 1024} KB")
+
+    for i, src in enumerate(GALLERY, 1):
+        im = ImageOps.exif_transpose(Image.open(SRC / src)).convert("RGB")
+        for suffix, width in {"": 1200, "-sm": 600}.items():
+            out = im.copy()
+            out.thumbnail((width, width * 2), Image.LANCZOS)
+            path = OUT / f"event-{i:02d}{suffix}.jpg"
+            out.save(path, "JPEG", quality=78, optimize=True, progressive=True)
+        print(f"event-{i:02d}  {im.width}x{im.height}")
 
 
 if __name__ == "__main__":
