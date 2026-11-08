@@ -114,9 +114,6 @@ li { margin-bottom: .35em; }
 .section { padding: 72px 0; }
 .section-tight { padding: 48px 0; }
 .section-white { background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.section-navy { background: linear-gradient(135deg, var(--plum) 0%, #6e2a52 100%); color: #f1e4ed; }
-.section-navy h2, .section-navy h3 { color: #fff; }
-.section-navy a { color: #fff; }
 .eyebrow {
   display: inline-block; font-size: .8rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
   color: var(--rose); margin-bottom: .75em;
@@ -125,26 +122,15 @@ li { margin-bottom: .35em; }
   content: ""; display: inline-block; width: 28px; height: 1px; background: var(--champagne);
   vertical-align: middle; margin-right: 10px;
 }
-.section-navy .eyebrow { color: var(--champagne); }
 .lead { font-size: 1.2rem; color: var(--muted); max-width: 46em; }
-.section-navy .lead { color: #e2cddc; }
 
 /* Hero */
 .hero {
-  position: relative; overflow: hidden;
-  background:
-    radial-gradient(1200px 400px at 85% -10%, rgba(201, 164, 106, .16), transparent 60%),
-    radial-gradient(900px 500px at -10% 110%, rgba(142, 58, 99, .08), transparent 60%),
-    linear-gradient(180deg, var(--blush), var(--cream));
-  padding: 88px 0 80px;
+  background: var(--white);
+  padding: 88px 0 72px;
   border-bottom: 1px solid var(--line);
 }
-.hero::after {
-  content: ""; position: absolute; right: -60px; bottom: -60px; width: 360px; height: 360px;
-  background: url("/assets/pattern.svg") center / contain no-repeat; opacity: .5; pointer-events: none;
-}
-@media (max-width: 700px) { .hero::after { display: none; } }
-.hero-inner { position: relative; z-index: 1; max-width: 760px; }
+.hero-inner { max-width: 780px; }
 .hero h1 span { color: var(--rose); font-style: italic; font-weight: 500; }
 .hero .lead { font-size: 1.25rem; }
 
@@ -162,12 +148,8 @@ li { margin-bottom: .35em; }
 }
 .btn-primary { background: var(--plum); color: #fff; }
 .btn-primary:hover { background: var(--rose); color: #fff; }
-.section-navy .btn-primary { background: var(--champagne); color: var(--plum-deep); }
-.section-navy .btn-primary:hover { background: #dbbb86; color: var(--plum-deep); }
 .btn-secondary { background: transparent; color: var(--plum); border-color: var(--plum); }
 .btn-secondary:hover { background: var(--plum); color: #fff; }
-.section-navy .btn-secondary { color: #fff; border-color: #fff; }
-.section-navy .btn-secondary:hover { background: #fff; color: var(--plum); }
 
 /* Cards & grids */
 .grid { display: grid; gap: 24px; }
