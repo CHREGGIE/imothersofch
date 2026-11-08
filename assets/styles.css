@@ -158,6 +158,8 @@ li { margin-bottom: .35em; }
 .row > h3 { grid-column: 1; grid-row: 1 / span 20; margin: 0; }
 .row p:last-child { margin-bottom: 0; }
 .row > .btn { justify-self: start; }
+.zeffy-form { margin: 8px 0 16px; min-height: 450px; background: var(--white); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+.form-help { font-size: .92rem; color: var(--muted); }
 .pay-to { font-family: var(--serif); font-size: 1.6rem; font-weight: 600; color: var(--plum-deep); overflow-wrap: anywhere; }
 @media (max-width: 760px) {
   .row { grid-template-columns: 1fr; }

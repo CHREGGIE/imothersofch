@@ -11,9 +11,21 @@
         <div class="rows">
           <article class="row" id="card">
             <h3>Credit or debit card</h3>
-            <!-- ZEFFY FORM: replace the paragraph and button below with the Zeffy embed code -->
-            <p>To give by credit or debit card, email us and we will send you a secure link to complete your donation online.</p>
-            <a class="btn btn-primary" href="mailto:{{donate_email}}?subject=Credit%20card%20donation">Email {{donate_email}}</a>
+            <p>Give securely online with the form below. Card payments are processed by Zeffy, and your receipt is emailed to you automatically.</p>
+            <div class="zeffy-form">
+              <!-- Zeffy donation form embed (donate-729) -->
+              <div>
+                <div data-zeffy-embed data-form-url="/embed/donation-form/donate-729"></div>
+                <div data-zeffy-embed-fallback style="display:none;">
+                  <div style="position:relative;overflow:hidden;height:450px;width:100%;"><iframe title='Donation form powered by Zeffy' style='position: absolute; border: 0; top:0;left:0;bottom:0;right:0;width:100%;height:100%' data-zeffy-embed-src='https://www.zeffy.com/embed/donation-form/donate-729' allowpaymentrequest allowTransparency="true"></iframe></div>
+                </div>
+                <script
+                  src="https://www.zeffy.com/embed/v2/zeffy-embed.js"
+                  onerror="document.querySelectorAll('[data-zeffy-embed-fallback]').forEach(function(el){el.style.display='block';el.querySelectorAll('iframe[data-zeffy-embed-src]').forEach(function(f){f.src=f.getAttribute('data-zeffy-embed-src');});});">
+                </script>
+              </div>
+            </div>
+            <p class="form-help">Having trouble with the form? Email <a href="mailto:{{donate_email}}?subject=Credit%20card%20donation">{{donate_email}}</a> and we will help.</p>
           </article>
           <article class="row" id="paypal-zelle">
             <h3>PayPal or Zelle</h3>
