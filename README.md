@@ -56,7 +56,7 @@ The site is set up for Vercel. There's no build step on Vercel's side: the finis
 3. Keep the existing **MX** and **TXT** records for Google Workspace. Change only the records Vercel asks for, or email will stop working.
 4. Vercel issues the HTTPS certificate automatically once DNS is in place.
 
-Every push to the production branch redeploys the site. Other branches get their own preview addresses.
+The production branch is `main`: every push to `main` redeploys the live site. Other branches get their own preview addresses.
 
 ## Google for Nonprofits website checklist
 
