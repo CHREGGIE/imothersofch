@@ -157,6 +157,7 @@ li { margin-bottom: .35em; }
 .row > * { grid-column: 2; }
 .row > h3 { grid-column: 1; grid-row: 1 / span 20; margin: 0; }
 .row p:last-child { margin-bottom: 0; }
+.row > .btn { justify-self: start; }
 @media (max-width: 760px) {
   .row { grid-template-columns: 1fr; }
   .row > *, .row > h3 { grid-column: 1; grid-row: auto; }
@@ -235,3 +236,15 @@ blockquote.charter cite { display: block; margin-top: 1em; font-family: var(--sa
 .footer-bottom p { margin: 0 0 .4em; }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* ---------- Photos ---------- */
+.photo { display: block; width: 100%; height: auto; border-radius: 4px; background: var(--blush); }
+.photo-inline { margin: 4px 0 20px; }
+.photo-band { padding: 48px 0 0; }
+.photo-band + .section { padding-top: 48px; }
+.hero-grid { display: grid; grid-template-columns: 1fr 380px; gap: 56px; align-items: center; }
+.hero-photo .photo { aspect-ratio: 4 / 5; object-fit: cover; }
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+  .hero-photo .photo { aspect-ratio: 4 / 3; }
+}

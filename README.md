@@ -65,7 +65,7 @@ Every push to the production branch redeploys the site. Other branches get their
 | Multiple pages | 7 distinct pages: Home, About, Mission, Programs, Donate, Contact, Privacy |
 | Mission, history, programs | Mission page (charter text), About page (history), Programs page (detailed descriptions) |
 | No placeholder text | None. Every page has real content. |
-| No AI-generated images | No photos or generated images. The only graphics are the candle logo and the brownstone line drawing in the footer, both simple hand-coded SVG (the drawing comes from `tools/brownstones.py`). |
+| No AI-generated images | Real photos from the organization's own events (originals in `photos/`, web copies made by `tools/photos.py`, metadata stripped). The only other graphics are the candle logo and the brownstone line drawing in the footer, both simple hand-coded SVG (the drawing comes from `tools/brownstones.py`). |
 | Org name in header and footer | On every page |
 | Footer: EIN, admin email, domain, physical address | On every page |
 | Contact email on the custom domain | admin@ and donate@imothersofch.org |
