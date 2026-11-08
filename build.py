@@ -55,12 +55,12 @@ PAGES = [
 
 CANDLES_SVG = """<svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
   <circle cx="24" cy="24" r="23" fill="var(--plum)"/>
-  <path d="M14 12.5c2 3 3 4.6 3 6.4a3 3 0 0 1-6 0c0-1.8 1-3.4 3-6.4z" fill="var(--champagne)"/>
-  <path d="M24 17.5c2 3 3 4.6 3 6.4a3 3 0 0 1-6 0c0-1.8 1-3.4 3-6.4z" fill="var(--champagne)"/>
-  <path d="M34 12.5c2 3 3 4.6 3 6.4a3 3 0 0 1-6 0c0-1.8 1-3.4 3-6.4z" fill="var(--champagne)"/>
-  <rect x="12" y="23" width="4" height="14" rx="1" fill="#fff"/>
-  <rect x="22" y="28" width="4" height="9" rx="1" fill="#fff"/>
-  <rect x="32" y="23" width="4" height="14" rx="1" fill="#fff"/>
+  <path d="M14 15.5c2 3 3 4.6 3 6.4a3 3 0 0 1-6 0c0-1.8 1-3.4 3-6.4z" fill="var(--champagne)"/>
+  <path d="M24 10.5c2 3 3 4.6 3 6.4a3 3 0 0 1-6 0c0-1.8 1-3.4 3-6.4z" fill="var(--champagne)"/>
+  <path d="M34 15.5c2 3 3 4.6 3 6.4a3 3 0 0 1-6 0c0-1.8 1-3.4 3-6.4z" fill="var(--champagne)"/>
+  <rect x="12" y="26" width="4" height="11" rx="1" fill="#fff"/>
+  <rect x="22" y="21" width="4" height="16" rx="1" fill="#fff"/>
+  <rect x="32" y="26" width="4" height="11" rx="1" fill="#fff"/>
   <rect x="9" y="37" width="30" height="2.5" rx="1.25" fill="#fff" opacity=".75"/>
 </svg>"""
 
