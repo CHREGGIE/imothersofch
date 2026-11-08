@@ -9,10 +9,17 @@
     <section class="section">
       <div class="container">
         <div class="rows">
-          <article class="row">
-            <h3>Give by email</h3>
-            <p>Write to our donations team and we will reply with the current ways to give, including credit card, bank transfer and other options, and answer any questions.</p>
-            <a class="btn btn-primary" href="mailto:{{donate_email}}?subject=Donation%20to%20Israeli%20Mothers%20of%20Crown%20Heights">Email {{donate_email}}</a>
+          <article class="row" id="card">
+            <h3>Credit or debit card</h3>
+            <!-- ZEFFY FORM: replace the paragraph and button below with the Zeffy embed code -->
+            <p>To give by credit or debit card, email us and we will send you a secure link to complete your donation online.</p>
+            <a class="btn btn-primary" href="mailto:{{donate_email}}?subject=Credit%20card%20donation">Email {{donate_email}}</a>
+          </article>
+          <article class="row" id="paypal-zelle">
+            <h3>PayPal or Zelle</h3>
+            <p>Send your gift by PayPal or Zelle to:</p>
+            <p class="pay-to">{{donate_email}}</p>
+            <p>Please include your name and mailing address in the note so we can send your receipt.</p>
           </article>
           <article class="row">
             <h3>Give by check</h3>

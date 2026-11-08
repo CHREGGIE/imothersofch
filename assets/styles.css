@@ -158,6 +158,7 @@ li { margin-bottom: .35em; }
 .row > h3 { grid-column: 1; grid-row: 1 / span 20; margin: 0; }
 .row p:last-child { margin-bottom: 0; }
 .row > .btn { justify-self: start; }
+.pay-to { font-family: var(--serif); font-size: 1.6rem; font-weight: 600; color: var(--plum-deep); overflow-wrap: anywhere; }
 @media (max-width: 760px) {
   .row { grid-template-columns: 1fr; }
   .row > *, .row > h3 { grid-column: 1; grid-row: auto; }
