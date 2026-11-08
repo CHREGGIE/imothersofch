@@ -84,7 +84,7 @@ def header(active: str) -> str:
         {CANDLES_SVG}
         <span class="brand-text">
           <span class="brand-name">Israeli Mothers</span>
-          <span class="brand-sub">of Crown Heights</span>
+          <span class="brand-sub">of Crown Heights <span class="brand-inc">Inc.</span></span>
         </span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">

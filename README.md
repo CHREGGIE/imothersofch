@@ -24,7 +24,7 @@ Don't edit the root `*.html` files directly, because they get regenerated.
 - **Organization details** (address, phone, emails, EIN) are in the `ORG` block at the top of `build.py`. Change them once there and every page updates.
 - **Page text** is in `_pages/<page>.html`.
 - **Header and footer** are in `build.py` (`header()` and `footer()`).
-- **Styles** are in `assets/styles.css`.
+- **Styles** are in `assets/styles.css`. Brand colors and fonts are documented in `BRAND.md`.
 
 After making changes, run:
 
@@ -39,7 +39,7 @@ Then commit the regenerated files.
 The site is set up for Vercel. There's no build step on Vercel's side: the finished pages are committed, and Vercel serves them as they are.
 
 - `vercel.json` adds security headers and sets a one-hour browser cache on `/assets/`. It also redirects `/index.html` to `/`.
-- `.vercelignore` keeps the source files (`_pages/`, `build.py`, this README) off the live site.
+- `.vercelignore` keeps the source files (`_pages/`, `build.py`, this README, `BRAND.md`) off the live site.
 - `404.html` is used automatically for missing pages.
 
 ### First deploy

@@ -1,18 +1,18 @@
 /* Israeli Mothers of Crown Heights Incorporated — site styles */
 :root {
-  --plum: #5b2149;        /* primary: deep plum */
-  --plum-deep: #3a1430;   /* dark text */
-  --footer: #5a2148;      /* footer, topbar */
-  --rose: #8e3a63;        /* links, accents: soft maroon */
-  --rose-dark: #742b50;
-  --lavender: #f4ecf3;    /* soft tint */
-  --mauve: #e7d6e4;
-  --champagne: #c9a46a;   /* fine gold accents */
-  --blush: #f9eff2;
-  --cream: #fdf9f8;
-  --ink: #2d2029;
-  --muted: #6e5c68;
-  --line: #ecdfe6;
+  /* Brand palette: see BRAND.md */
+  --plum: #5b2149;        /* Plum: primary (logo, buttons, footer) */
+  --plum-deep: #3a1430;   /* Deep Plum: headings */
+  --rose: #8e3a63;        /* Maroon Rose: links, accent text */
+  --champagne: #c9a46a;   /* Champagne Gold: candle flames, fine accents */
+  --cream: #fdf9f8;       /* Cream: page background */
+  --blush: #f9eff2;       /* Blush: light tint */
+  --lavender: #f4ecf3;    /* Lavender Mist: hover tint */
+  --line: #ecdfe6;        /* Hairline: dividers */
+  --ink: #2d2029;         /* Ink: body text */
+  --muted: #6e5c68;       /* Muted: secondary text */
+  --on-plum: #e2cddc;     /* text on plum */
+  --on-plum-muted: #c4a5ba;
   --white: #ffffff;
   --radius: 18px;
   --shadow: 0 1px 2px rgba(58, 20, 48, .05), 0 12px 32px rgba(58, 20, 48, .07);
@@ -61,7 +61,7 @@ li { margin-bottom: .35em; }
 
 /* ---------- Header ---------- */
 .site-header { background: var(--white); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 50; }
-.topbar { background: var(--footer); color: #e9d8e4; font-size: .82rem; letter-spacing: .04em; }
+.topbar { background: var(--plum); color: var(--on-plum); font-size: .82rem; letter-spacing: .04em; }
 .topbar-inner { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 30px; }
 .bsd { font-family: var(--hebrew); color: var(--champagne); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 76px; }
@@ -69,6 +69,7 @@ li { margin-bottom: .35em; }
 .brand-mark { width: 46px; height: 46px; flex: none; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; min-width: 0; }
 .brand-name { font-family: var(--serif); font-weight: 600; font-size: 1.75rem; letter-spacing: .005em; line-height: 1; }
+.brand-inc { font-style: normal; font-family: var(--sans); font-size: .7em; letter-spacing: .02em; color: var(--muted); margin-left: 2px; }
 .brand-sub { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 1.1rem; color: var(--rose); margin-top: 2px; line-height: 1.1; }
 
 .site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; align-items: center; }
@@ -213,7 +214,7 @@ blockquote.charter cite { display: block; margin-top: 1em; font-family: var(--sa
 .prose h2:first-child { margin-top: 0; }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--footer); color: #e2cddc; padding: 56px 0 24px; font-size: .95rem; }
+.site-footer { background: var(--plum); color: var(--on-plum); padding: 56px 0 24px; font-size: .95rem; }
 .site-footer a { color: #fff; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
 @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
@@ -221,13 +222,13 @@ blockquote.charter cite { display: block; margin-top: 1em; font-family: var(--sa
 .footer-facts { margin: 1.25em 0 0; display: grid; gap: 8px; }
 .footer-facts div { display: grid; grid-template-columns: 170px 1fr; gap: 12px; }
 @media (max-width: 480px) { .footer-facts div { grid-template-columns: 1fr; gap: 0; } }
-.footer-facts dt { color: #c4a5ba; font-weight: 600; }
+.footer-facts dt { color: var(--on-plum-muted); font-weight: 600; }
 .footer-facts dd { margin: 0; color: #fff; overflow-wrap: anywhere; }
 .footer-heading { font-family: var(--serif); color: #fff; font-weight: 600; font-size: 1.3rem; margin-bottom: .5em; }
 .footer-nav ul { list-style: none; padding: 0; margin: 0; }
 .footer-nav a { text-decoration: none; }
 .footer-nav a:hover { text-decoration: underline; }
-.footer-bottom { border-top: 1px solid rgba(255, 255, 255, .18); margin-top: 40px; padding-top: 20px; font-size: .85rem; color: #c4a5ba; }
+.footer-bottom { border-top: 1px solid rgba(255, 255, 255, .18); margin-top: 40px; padding-top: 20px; font-size: .85rem; color: var(--on-plum-muted); }
 .footer-bottom p { margin: 0 0 .4em; }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
