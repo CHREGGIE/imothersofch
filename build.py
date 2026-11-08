@@ -103,6 +103,9 @@ def header(active: str) -> str:
 def footer() -> str:
     o = ORG
     return f"""<footer class="site-footer">
+    <div class="container footer-skyline">
+      <img src="/assets/brownstones.svg" alt="" width="1200" height="202" loading="lazy" decoding="async">
+    </div>
     <div class="container footer-grid">
       <div class="footer-org">
         <p class="footer-name">{o['legal_name']}</p>

@@ -214,8 +214,11 @@ blockquote.charter cite { display: block; margin-top: 1em; font-family: var(--sa
 .prose h2:first-child { margin-top: 0; }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--plum); color: var(--on-plum); padding: 56px 0 24px; font-size: .95rem; }
+.site-footer { background: var(--plum); color: var(--on-plum); padding: 40px 0 24px; font-size: .95rem; }
 .site-footer a { color: #fff; }
+.footer-skyline { margin-bottom: 40px; }
+.footer-skyline img { display: block; width: 100%; height: auto; opacity: .7; }
+@media (max-width: 700px) { .footer-skyline img { height: 120px; object-fit: cover; object-position: 50% 100%; } }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
 @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
 .footer-name { font-family: var(--serif); font-size: 1.6rem; font-weight: 600; color: #fff; margin-bottom: .5em; }
