@@ -49,6 +49,6 @@ The CMYK values are calculated conversions. For anything printed in quantity, as
 
 ## Name and logo
 
-- **Header lockup:** "Israeli Mothers" on the first line (Cormorant Garamond 600, Deep Plum), and "*of Crown Heights* Inc." smaller on the second line (italic, Maroon Rose, with "Inc." in Mulish, Muted).
+- **Header lockup:** "Israeli Mothers" on the first line (Cormorant Garamond 600, with "Israeli" in Maroon Rose and "Mothers" in Deep Plum), and "*of Crown Heights* Inc." smaller on the second line (italic, Maroon Rose, with "Inc." in Mulish, Muted).
 - **Full legal name:** use "Israeli Mothers of Crown Heights Incorporated" on receipts, legal documents and the website footer.
 - **Logo mark:** three Shabbos candles (two tall candles side by side, with a smaller candle beside them) on a Plum circle, with Champagne Gold flames and white candles. The file is at `assets/favicon.svg`.

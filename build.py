@@ -87,7 +87,7 @@ def header(active: str) -> str:
       <a class="brand" href="/" aria-label="{ORG['legal_name']} – home">
         {CANDLES_SVG}
         <span class="brand-text">
-          <span class="brand-name">Israeli Mothers</span>
+          <span class="brand-name"><span class="brand-accent">Israeli</span> Mothers</span>
           <span class="brand-sub">of Crown Heights <span class="brand-inc">Inc.</span></span>
         </span>
       </a>
